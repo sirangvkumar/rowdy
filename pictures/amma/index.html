@@ -26,15 +26,18 @@
       <a-mixin id="sphere" geometry="primitive: sphere"></a-mixin>
     </a-assets>
     <a-assets>
+      <audio id="background_audio" src="assets/music.mp3"></audio>
+  </a-assets>
+    <a-assets>
       <img id="bg" src="assets/bg.jpg" />
 
       <img id="pic1" src="assets/1.jpg" />
       <img id="pic2" src="assets/2.jpg" />
-      <!-- <img id="3" src="assets/3.jpg" />
-      <img id="4" src="assets/4.jpg" />
-      <img id="5" src="assets/5.jpg" />
-      <img id="6" src="assets/6.jpg" />
-      <img id="7" src="assets/7.jpg" /> -->
+      <img id="pic3" src="assets/3.jpg" />
+      <img id="pic4" src="assets/4.jpg" />
+      <img id="pic5" src="assets/5.jpg" />
+      <img id="pic6" src="assets/6.jpg" />
+      <img id="pic7" src="assets/7.jpg" />
     </a-assets>
 
     <a-image id="mute-image" src="#mute" position="-1 -1 0"></a-image>
@@ -51,9 +54,9 @@
       </a-entity>
     </a-entity>
 
-    <!-- <a-curvedimage id="7" src="#7" transparent="true" height="5" radius="5" theta-length="70" rotation="0  360 0"
+    <a-curvedimage id="7" src="#7" transparent="true" height="5" radius="5" theta-length="70" rotation="0  360 0"
       position="3 2 6">
-    </a-curvedimage> -->
+    </a-curvedimage>
 
 
     <a-entity>
@@ -61,24 +64,20 @@
       <a-image position="16 4 -15" height="10" width="10" src="#pic1"></a-image>
     </a-entity>
 
-    <a-curvedimage id="n2" src="#pic2" transparent="true" height="4" radius="4" theta-length="40"
-      rotation="0 240 0" position="0 0 -2">
-    </a-curvedimage>
-
-    <!-- <a-entity>
+    <a-entity>
       <a-animation attribute="position" from="-35 -10 -5" to="-35 10 -5" repeat="indefinite"></a-animation>
-      <a-image position="16 4 -15" height="15" width="15" src="#2"></a-image>
+      <a-image position="16 4 -15" height="15" width="15" src="#pic2"></a-image>
     </a-entity>
 
     <a-entity>
       <a-animation attribute="position" from="30 20 -40" to="30 20 -40" repeat="indefinite"></a-animation>
-      <a-image position="16 4 -15" height="40" width="30" src="#3"></a-image>
+      <a-image position="16 4 -15" height="40" width="30" src="#pic3"></a-image>
     </a-entity>
 
     <a-entity>
       <a-animation attribute="position" from="-10 20 -40" to="-10 20 -40" repeat="0"></a-animation>
-      <a-image position="16 4 -15" height="45" width="50" src="#4"></a-image>
-    </a-entity> -->
+      <a-image position="16 4 -15" height="45" width="50" src="#pic4"></a-image>
+    </a-entity>
 
 
     <a-entity position="-5 -5 -15">
