@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>AMMA</title>
+  <title>Family</title>
   <meta name="description" content="">
   <script src="./js/aframe.min.js"></script>
   <script src="./js/aframe-bmfont-text-component.min.js"></script>
@@ -15,7 +15,7 @@
     <a-assets>
       <img id="mute" src="assets/song_off.png">
       <img id="unmute" src="assets/song.png">
-      <img id="close" src="assets/home.png">
+      <img id="close" src="assets/back.png">
       <a-mixin id="cube" geometry="primitive: box"></a-mixin>
       <a-mixin id="cube-hovered" material="color: magenta"></a-mixin>
       <a-mixin id="cube-selected" material="color: cyan"></a-mixin>
@@ -60,6 +60,7 @@
       </a-entity>
     </a-entity>
 
+    <!-- Gallery -->
     <a-curvedimage id="img1" src="#pic1" transparent="true" height="4" radius="5" theta-length="50" rotation="0  180 0"
       position="-7 2.5 2">
     </a-curvedimage>
