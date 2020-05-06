@@ -20,7 +20,13 @@
             <img id="us" src="assets/us.jpg">
 
         </a-assets>
-
+        <a-assets>
+            <video id="video1" autoplay loop="true" src="assets/giphy.gif"></video>
+          </a-assets>
+        
+          <!-- Using the asset management system. -->
+          <a-video src="#video1" width="16" height="9" position="0 0 0"></a-video>
+    
         <a-entity>
             <a-entity camera look-controls wasd-controls>
                 <a-entity position="0 1 -2" scale="0.2 0.2 0.2"
