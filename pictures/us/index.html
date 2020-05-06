@@ -31,19 +31,10 @@
     <a-assets>
       <img id="bg" src="assets/bg.jpg" />
 
-      <img id="pic1" src="assets/1.jpg" />
+      <img id="pic1" src="assets/1.png" />
       <img id="pic2" src="assets/2.jpg" />
-      <img id="pic3" src="assets/3.jpg" />
-      <img id="pic4" src="assets/4.jpg" />
-      <img id="pic5" src="assets/5.jpg" />
-      <img id="pic6" src="assets/6.jpg" />
-      <img id="pic7" src="assets/7.jpg" />
-      <img id="pic8" src="assets/8.jpg" />
-      <img id="pic9" src="assets/9.jpg" />
-      <img id="pic10" src="assets/10.jpg" />
-      <img id="pic11" src="assets/11.jpg" />
-      <img id="pic12" src="assets/12.jpg" />
-      <img id="pic13" src="assets/13.jpg" />
+      <img id="pic3" src="assets/3.png" />
+
     </a-assets>
 
     <a-image id="mute-image" src="#mute" position="-1 0 0"></a-image>
@@ -61,58 +52,16 @@
     </a-entity>
 
     <!-- Gallery -->
-    <a-curvedimage id="img1" src="#pic1" transparent="true" height="4" radius="5" theta-length="50" rotation="0  180 0"
-      position="-7 2.5 2">
+    <a-curvedimage id="ho1" src="#pic1" transparent="true" height="2" radius="3" theta-length="40" rotation="0 250 0"
+      position="0 0 -2">
     </a-curvedimage>
 
-    <a-curvedimage id="img10" src="#pic10" transparent="true" height="4" radius="5" theta-length="50"
-      rotation="0  220 0" position="-7 2.5 3.5">
+    <a-curvedimage id="ho2" src="#pic2" transparent="true" height="2" radius="3" theta-length="40" rotation="0 200 0"
+      position="0 0 -2">
     </a-curvedimage>
 
-    <a-curvedimage id="img11" src="#pic11" transparent="true" height="4" radius="5" theta-length="50"
-      rotation="0  260 0" position="-7 2.5 5">
-    </a-curvedimage>
-
-    <a-curvedimage id="img12" src="#pic12" transparent="true" height="4" radius="5" theta-length="50"
-      rotation="0  300 0" position="-7 2.5 6.5">
-    </a-curvedimage>
-
-    <a-curvedimage id="img13" src="#pic13" transparent="true" height="4" radius="5" theta-length="60"
-      rotation="0  310 0" position="-3.5 2.5 8.5">
-    </a-curvedimage>
-
-    <a-entity>
-      <a-animation attribute="position" from="-30 0 -5" to="-30 0 -5" repeat="indefinite"></a-animation>
-      <a-image position="16 4 -15" height="15" width="15" src="#pic2"></a-image>
-    </a-entity>
-
-    <a-entity>
-      <a-animation attribute="position" from="-10 0 -5" to="-10 0 -5" repeat="indefinite"></a-animation>
-      <a-image position="16 4 -15" height="15" width="20" src="#pic4"></a-image>
-    </a-entity>
-
-    <a-curvedimage id="img3" src="#pic3" transparent="true" height="4" radius="5" theta-length="50" rotation="0  140 0"
-      position="6 2.5 2">
-    </a-curvedimage>
-
-    <a-curvedimage id="img5" src="#pic5" transparent="true" height="4" radius="5" theta-length="50" rotation="0  100 0"
-      position="6 2.5 3.5">
-    </a-curvedimage>
-
-    <a-curvedimage id="img6" src="#pic6" transparent="true" height="4" radius="5" theta-length="50" rotation="0  60 0"
-      position="6 2.5 5">
-    </a-curvedimage>
-
-    <a-curvedimage id="img7" src="#pic7" transparent="true" height="4" radius="5" theta-length="50" rotation="0  20 0"
-      position="6 2.5 6.5">
-    </a-curvedimage>
-
-    <a-curvedimage id="img8" src="#pic8" transparent="true" height="4" radius="5" theta-length="50" rotation="0  340 0"
-      position="6 2.5 8">
-    </a-curvedimage>
-
-    <a-curvedimage id="img9" src="#pic9" transparent="true" height="4" radius="5" theta-length="60" rotation="0  330 0"
-      position="1 2.5 8">
+    <a-curvedimage id="ho5" src="#pic3" transparent="true" height="2" radius="3" theta-length="40" rotation="0 150 0"
+      position="0 0 -2">
     </a-curvedimage>
 
     <a-sky src="#bg"></a-sky>
@@ -132,6 +81,12 @@
     });
     var muted = false;
     var muteImage = document.querySelector("#mute-image");
+    document.querySelector("#ho1").addEventListener('click', function () {
+      window.location.href = "insta/index.html";
+    });
+    document.querySelector("#ho3").addEventListener('click', function () {
+      window.location.href = "whatsapp/index.html";
+    });
     document.querySelector('#mute-image').addEventListener('click', function () {
       muted = !muted;
       document.getElementById('background_audio').muted = muted;
