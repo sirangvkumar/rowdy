@@ -52,16 +52,16 @@
     </a-entity>
 
     <!-- Gallery -->
-    <a-curvedimage id="ho1" src="#pic1" transparent="true" height="2" radius="3" theta-length="40" rotation="0 250 0"
-      position="0 0 -2">
+    <a-curvedimage id="ho1" src="#pic1" transparent="true" height="2" radius="3" theta-length="40" rotation="0 160 0"
+      position="1 2.5 2">
     </a-curvedimage>
 
-    <a-curvedimage id="ho2" src="#pic2" transparent="true" height="2" radius="3" theta-length="40" rotation="0 200 0"
-      position="0 0 -2">
+    <a-curvedimage id="ho2" src="#pic2" transparent="true" height="2" radius="3" theta-length="40" rotation="0 100 0"
+      position="1 2.5 2">
     </a-curvedimage>
 
-    <a-curvedimage id="ho5" src="#pic3" transparent="true" height="2" radius="3" theta-length="40" rotation="0 150 0"
-      position="0 0 -2">
+    <a-curvedimage id="ho5" src="#pic3" transparent="true" height="2" radius="3" theta-length="40" rotation="0 40 0"
+      position="1 2.5 2">
     </a-curvedimage>
 
     <a-sky src="#bg"></a-sky>
@@ -81,12 +81,12 @@
     });
     var muted = false;
     var muteImage = document.querySelector("#mute-image");
-    document.querySelector("#ho1").addEventListener('click', function () {
-      window.location.href = "insta/index.html";
-    });
-    document.querySelector("#ho3").addEventListener('click', function () {
-      window.location.href = "whatsapp/index.html";
-    });
+    // document.querySelector("#ho1").addEventListener('click', function () {
+    //   window.location.href = "insta/index.html";
+    // });
+    // document.querySelector("#ho3").addEventListener('click', function () {
+    //   window.location.href = "whatsapp/index.html";
+    // });
     document.querySelector('#mute-image').addEventListener('click', function () {
       muted = !muted;
       document.getElementById('background_audio').muted = muted;
