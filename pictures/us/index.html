@@ -52,13 +52,12 @@
     </a-entity>
 
     <!-- Gallery -->
-  <a-entity>
-      <a-animation attribute="position" from="-50 0 -15" to="-50 0 -15" repeat="indefinite"></a-animation>
-      <a-image position="16 4 -15" height="15" width="15" src="#pic1"></a-image>
-  </a-entity>
+    <a-curvedimage id="img3" src="#pic1" transparent="true" height="4" radius="5" theta-length="50" rotation="0  200 0"
+    position="-2 2.5 2">
+  </a-curvedimage>
 
   <a-entity>
-      <a-animation attribute="position" from="-20 0 -15" to="-20 0 -15" repeat="indefinite"></a-animation>
+      <a-animation attribute="position" from="-18 0 -15" to="-18 0 -15" repeat="indefinite"></a-animation>
       <a-image position="16 4 -15" height="20" width="20" src="#pic2"></a-image>
   </a-entity>
 
@@ -84,9 +83,9 @@
     });
     var muted = false;
     var muteImage = document.querySelector("#mute-image");
-    // document.querySelector("#ho1").addEventListener('click', function () {
-    //   window.location.href = "insta/index.html";
-    // });
+    document.querySelector("#ho1").addEventListener('click', function () {
+      window.location.href = "insta/index.html";
+    });
     document.querySelector("#img3").addEventListener('click', function () {
       window.location.href = "whatsapp/index.html";
     });
