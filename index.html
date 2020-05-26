@@ -28,41 +28,42 @@
         <!-- animation__mouseleave="property: scale; startEvents: mouseleave; easing: easeInCubic; dur: 500; to: 1 1 1" -->
         <a-entity>
             <a-entity camera look-controls wasd-controls>
-                <a-entity
-                    animation__click="property: scale; startEvents: click; easing: easeInCubic; dur: 150; from: 0.1 0.1 0.1; to: 1 1 1"
-                    animation__fusing="property: scale; startEvents: fusing; easing: easeInCubic; dur: 1500; from: 1 1 1; to: 0.1 0.1 0.1"
-                    cursor="fuse: true;" material="color: black; shader: flat" position="0 0 -3"
-                    geometry="primitive: ring"></a-entity>
+                <a-entity position="0 0 -3" geometry="primitive: ring; radiusInner: 0.2; radiusOuter: 0.3;"
+                    material="color: cyan; shader: flat" cursor="maxDistance: 30; fuse: true">
+                    <a-animation begin="click" easing="ease-in" attribute="scale" fill="forwards" from="0.2 0.2 0.2"
+                        to="1 1 1" dur="150"></a-animation>
+                    <a-animation begin="fusing" easing="ease-in" attribute="scale" fill="backwards" from="1 1 1"
+                        to="0.2 0.2 0.2" dur="1500"></a-animation>
+                </a-entity>
             </a-entity>
-        </a-entity>
 
-        <a-curvedimage id="ho1" src="#amma" transparent="true" height="4" radius="4" theta-length="40"
-            rotation="0 240 0" position="0 0 -2">
-        </a-curvedimage>
+            <a-curvedimage id="ho1" src="#amma" transparent="true" height="4" radius="4" theta-length="40"
+                rotation="0 240 0" position="0 0 -2">
+            </a-curvedimage>
 
-        <a-curvedimage id="ho2" src="#frnds" transparent="true" height="4" radius="4" theta-length="40"
-            rotation="0 180 0" position="0 0 -2">
-        </a-curvedimage>
+            <a-curvedimage id="ho2" src="#frnds" transparent="true" height="4" radius="4" theta-length="40"
+                rotation="0 180 0" position="0 0 -2">
+            </a-curvedimage>
 
-        <a-curvedimage id="ho3" src="#saree" transparent="true" height="4" radius="4" theta-length="40"
-            rotation="0  120 0" position="0 0 -2">
-        </a-curvedimage>
+            <a-curvedimage id="ho3" src="#saree" transparent="true" height="4" radius="4" theta-length="40"
+                rotation="0  120 0" position="0 0 -2">
+            </a-curvedimage>
 
-        <a-curvedimage id="ho4" src="#spam" transparent="true" height="4" radius="4" theta-length="40"
-            rotation="0  60 0" position="0 0 -2">
-        </a-curvedimage>
+            <a-curvedimage id="ho4" src="#spam" transparent="true" height="4" radius="4" theta-length="40"
+                rotation="0  60 0" position="0 0 -2">
+            </a-curvedimage>
 
-        <a-curvedimage id="ho5" src="#alaghu" transparent="true" height="4" radius="4" theta-length="30"
-            rotation="0  0 0" position="0 0 -2">
-        </a-curvedimage>
+            <a-curvedimage id="ho5" src="#alaghu" transparent="true" height="4" radius="4" theta-length="30"
+                rotation="0  0 0" position="0 0 -2">
+            </a-curvedimage>
 
-        <a-curvedimage id="ho6" src="#us" transparent="true" height="4" radius="4" theta-length="30" rotation="0  300 0"
-            position="0 0 -2">
-        </a-curvedimage>
+            <a-curvedimage id="ho6" src="#us" transparent="true" height="4" radius="4" theta-length="30"
+                rotation="0  300 0" position="0 0 -2">
+            </a-curvedimage>
 
-        <a-light type="directional" color="#fff" intensity="0.2" position="-1 2 1"></a-light>
-        <a-light type="ambient" color="#fff"></a-light>
-        <a-sky src="#bg1"></a-sky>
+            <a-light type="directional" color="#fff" intensity="0.2" position="-1 2 1"></a-light>
+            <a-light type="ambient" color="#fff"></a-light>
+            <a-sky src="#bg1"></a-sky>
     </a-scene>
 
     <script>
