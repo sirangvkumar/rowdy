@@ -6,36 +6,16 @@
     <meta name="description" content="VR">
     <link rel="icon" href="rowdy.jpg" type="image/jpg" sizes="16x16">
     <script src="https://aframe.io/releases/0.8.2/aframe.min.js"></script>
-</head>
-
-<body>
     <script>
         AFRAME.registerComponent('auto-enter-vr', {
             init: function () {
                 this.el.sceneEl.enterVR();
             }
         });
-
-        document.querySelector("#ho1").addEventListener('click', function () {
-            window.location.href = "pictures/amma/index.html";
-        });
-        document.querySelector("#ho2").addEventListener('click', function () {
-            window.location.href = "pictures/frnds/index.html";
-        });
-        document.querySelector("#ho3").addEventListener('click', function () {
-            window.location.href = "pictures/saree/index.html";
-        });
-        document.querySelector("#ho4").addEventListener('click', function () {
-            window.location.href = "pictures/spam/index.html";
-        });
-        document.querySelector("#ho5").addEventListener('click', function () {
-            window.location.href = "pictures/alaghu/index.html";
-        });
-        document.querySelector("#ho6").addEventListener('click', function () {
-            window.location.href = "pictures/us/index.html";
-        });
     </script>
+</head>
 
+<body>
     <a-scene auto-enter-vr>
         <a-assets>
 
@@ -94,6 +74,27 @@
         <a-light type="ambient" color="#fff"></a-light>
         <a-sky src="#bg1"></a-sky>
     </a-scene>
+
+    <script>
+        document.querySelector("#ho1").addEventListener('click', function () {
+            window.location.href = "pictures/amma/index.html";
+        });
+        document.querySelector("#ho2").addEventListener('click', function () {
+            window.location.href = "pictures/frnds/index.html";
+        });
+        document.querySelector("#ho3").addEventListener('click', function () {
+            window.location.href = "pictures/saree/index.html";
+        });
+        document.querySelector("#ho4").addEventListener('click', function () {
+            window.location.href = "pictures/spam/index.html";
+        });
+        document.querySelector("#ho5").addEventListener('click', function () {
+            window.location.href = "pictures/alaghu/index.html";
+        });
+        document.querySelector("#ho6").addEventListener('click', function () {
+            window.location.href = "pictures/us/index.html";
+        });
+    </script>
 </body>
 
 </html>
