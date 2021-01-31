@@ -1,0 +1,100 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title> Happy Birthday Rowdy</title>
+    <meta name="description" content="VR">
+    <link rel="icon" href="rowdy.jpg" type="image/jpg" sizes="16x16">
+    <script src="https://aframe.io/releases/0.8.2/aframe.min.js"></script>
+    <script>
+        AFRAME.registerComponent('auto-enter-vr', {
+            init: function () {
+                this.el.sceneEl.enterVR();
+            }
+        });
+    </script>
+</head>
+
+<body>
+    <a-scene auto-enter-vr>
+        <a-assets>
+
+            <img id="bg1" src="assets/home.jpg" />
+            <img id="amma" src="assets/amma.jpg">
+            <img id="frnds" src="assets/frnds.jpg">
+            <img id="saree" src="assets/saree.jpg">
+            <img id="spam" src="assets/spam.png">
+            <img id="alaghu" src="assets/alaghu.jpg">
+            <img id="us" src="assets/us.jpg">
+
+        </a-assets>
+        <!-- <a-assets>
+            <video id="video1" autoplay loop="true" src="assets/video.mp4"></video>
+        </a-assets> -->
+
+        <!-- <a-video src="#video1" width="2" height="0.8" position="0 -1.2 -2"></a-video> -->
+        <a-entity>
+            <a-entity camera look-controls wasd-controls>
+                <a-entity position="0.1 1 -2" scale="0.2 0.2 0.2"
+                    geometry="primitive: ring; radiusOuter: 0.20; radiusInner: 0.13;"
+                    material="color: #ADD8E6; shader: flat" cursor="maxDistance: 30; fuse: true">
+                    <a-animation begin="click" easing="ease-in" attribute="scale" fill="backwards" from="0.1 0.1 0.1"
+                        to="1 1 1" dur="150"></a-animation>
+                    <a-animation begin="fusing" easing="ease-in" attribute="scale" fill="forwards" from="1 1 1"
+                        to="0.2 0.2 0.2" dur="1500"></a-animation>
+                </a-entity>
+            </a-entity>
+        </a-entity>
+
+        <a-curvedimage id="ho1" src="#amma" transparent="true" height="4" radius="4" theta-length="40"
+            rotation="0 240 0" position="0 0 -2">
+        </a-curvedimage>
+
+        <a-curvedimage id="ho2" src="#frnds" transparent="true" height="4" radius="4" theta-length="40"
+            rotation="0 180 0" position="0 0 -2">
+        </a-curvedimage>
+
+        <a-curvedimage id="ho3" src="#saree" transparent="true" height="4" radius="4" theta-length="40"
+            rotation="0  120 0" position="0 0 -2">
+        </a-curvedimage>
+
+        <a-curvedimage id="ho4" src="#spam" transparent="true" height="4" radius="4" theta-length="40"
+            rotation="0  60 0" position="0 0 -2">
+        </a-curvedimage>
+
+        <a-curvedimage id="ho5" src="#alaghu" transparent="true" height="4" radius="4" theta-length="30"
+            rotation="0  0 0" position="0 0 -2">
+        </a-curvedimage>
+
+        <a-curvedimage id="ho6" src="#us" transparent="true" height="4" radius="4" theta-length="30" rotation="0  300 0"
+            position="0 0 -2">
+        </a-curvedimage>
+
+        <a-light type="directional" color="#fff" intensity="0.2" position="-1 2 1"></a-light>
+        <a-light type="ambient" color="#fff"></a-light>
+        <a-sky src="#bg1"></a-sky>
+    </a-scene>
+
+    <script>
+        document.querySelector("#ho1").addEventListener('click', function () {
+            window.location.href = "pictures/amma/index.html";
+        });
+        document.querySelector("#ho2").addEventListener('click', function () {
+            window.location.href = "pictures/frnds/index.html";
+        });
+        document.querySelector("#ho3").addEventListener('click', function () {
+            window.location.href = "pictures/saree/index.html";
+        });
+        document.querySelector("#ho4").addEventListener('click', function () {
+            window.location.href = "pictures/spam/index.html";
+        });
+        document.querySelector("#ho5").addEventListener('click', function () {
+            window.location.href = "pictures/alaghu/index.html";
+        });
+        document.querySelector("#ho6").addEventListener('click', function () {
+            window.location.href = "pictures/us/index.html";
+        });
+    </script>
+</body>
+
+</html>
