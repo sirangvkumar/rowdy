@@ -3,12 +3,25 @@
 
 <head>
     <script>
+        window.onload = function() {
+            var userName = sessionStorage.getItem('userName');
+            var password = sessionStorage.getItem('password');
+
+            if (userName == 'rowdy' || password == 'sirangv') {
+                window.location.replace("rowdy.html")
+            }
+        }
+    </script>
+    <script>
         function login() {
-            var userName = document.getElementById("email").value;
-            var password = document.getElementById("pwd1").value;
-            if (userName.toLocaleLowerCase() == 'rowdy') {
-                if (password.toLocaleLowerCase() == 'sirangv') {
-                    window.location.href = "rowdy.html"
+            var userName = document.getElementById("email").value.toLocaleLowerCase();
+            var password = document.getElementById("pwd1").value.toLocaleLowerCase();
+            if (userName == 'rowdy') {
+                if (password == 'sirangv') {
+                    sessionStorage.setItem('userName', userName);
+                    sessionStorage.setItem('password', password);
+
+                    window.location.replace("rowdy.html")
                 } else {
                     alert('Enter correct password')
                 }
